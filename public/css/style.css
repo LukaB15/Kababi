@@ -229,10 +229,6 @@ footer .footer__foot nav li:hover {
   display: inline;
   color: white;
   font-size: 15px;
-  background-color: #C8A96A;
-  border-radius: 100%;
-  padding: 10px;
-  transition: 0.4s;
-}
+  margin-right: 5px; }
 
 /*# sourceMappingURL=style.css.map */
