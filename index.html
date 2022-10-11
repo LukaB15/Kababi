@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <title><Kababi</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://kit.fontawesome.com/d6da04fe60.js" crossorigin="anonymous"></script>
+    <title>Kababi</title>
+
 </head>
 <body>
     <header>
         <!-- Menu Desktop -->
-        <nav>
+        <nav class="header__nav">
         <img class="logo" src="" alt="logokababi">
-        <ul class="menu">
+        <ul class="header__menu">
             <li><a href="home">Home</a></li>
             <li><a href="about">About</a></li>
             <li><a href="page">Page</a></li>
@@ -61,5 +68,73 @@
 <section class="blog">
 
 </section>
-<footer></footer>
+
+
+<footer>
+    <section class ="footer__logo">
+        <img src="/images/logo2.png">
+    </section>
+
+    <section class="footer__menu">
+    <nav class="footer__about">
+        <ul>
+            <li class="footer__about--title"><a href="#">About</a></li>
+            <li class="footer__about--list"><a href="#">Home</a></li>
+            <li class="footer__about--list"><a href="#">Our Story</a></li>
+            <li class="footer__about--list"><a href="#">The Setting</a></li>
+            <li class="footer__about--list"><a href="#">The Suites</a></li>
+            <li class="footer__about--list"><a href="#">Food Lists</a></li>
+        </ul>
+    </nav>
+    <nav class="footer__facilities">
+        <ul>
+            <li class="footer__facilities--title"><a href="#">Facilities</a></li>
+            <li class="footer__facilities--list"><a href="#">The Fontus Spa</a></li>
+            <li class="footer__facilities--list"><a href="#">Experiences</a></li>
+            <li class="footer__facilities--list"><a href="#">Private Functions</a></li>
+            <li class="footer__facilities--list"><a href="#">Gallery Events</a></li>
+            <li class="footer__facilities--list"><a href="#">Special Offers</a></li>
+        </ul>
+    </nav>
+    <nav class="footer__newsletter">
+        <ul>
+            <li class="footer__newsletter--title">Newsletter</li>
+            <li class="footer__newsletter--list">Lorem ipsum, dolor sit amet consectetur a <br> Lorem ipsum dolor sperspqmus?</li>
+            <li class="footer__newsletter--list">
+                <label>
+                    <input type="email" name="mail" placeholder="Enter Email Adress"><button><span class="material-symbols-outlined">arrow_forward</span></button></li>
+                </label>
+            </ul>
+        </ul>
+    </nav>
+    <nav class="footer__contact">
+        <ul>
+            <li class="footer__contact--title"><a href="#">Contact</a></li>
+            <li class="footer__contact--list"><a href="#">
+                <span class="material-symbols-outlined">location_on</span>56 Main Street, D-Block, 2nd Floor,<br> Melbourne, Australia</a></li>
+            <li class="footer__contact--list"><a href="#">
+                <span class="material-symbols-outlined">mail</span>Support@gmail.com</a></li>
+            <li class="footer__contact--list"><a href="#">
+                <span class="material-symbols-outlined">call</span>+012 (345) 67 899</a></li>
+            <li class="footer__contact--list"><a href="#">
+                <span class="material-symbols-outlined">timer</span>08 am - 06 pm</a></li>
+          -
+        </ul>
+    </nav>
+
+    </section>
+
+    <section class ="footer__foot">
+        <p>Copyright © 2021 The Kababi - Restaurant HTML Template Designed by <a href="#">Themesflat</a> <img src="/images/iconup@2x.png"></p>
+       
+        <nav class="footer__foot--menu">
+            <ul>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
+        </nav>
+    </section>
+</footer>
 </body>

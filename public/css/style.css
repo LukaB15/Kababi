@@ -1,51 +1,238 @@
-a {
-  background-color: red; }
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 body {
   height: 100vh;
-  width: 100%; }
+  width: 100%;
+}
 
 .logo {
   margin-top: 30px;
-  display: flex; }
+  display: flex;
+}
 
-nav {
+.header__nav {
   background-color: transparent;
   margin-top: 30px;
   display: flex;
   flex-direction: row;
-  justify-content: center; }
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    /*justify-content:space-between;*/
-    /*align-content: space-between;*/
-    list-style: none; }
-
-nav ul li {
+  justify-content: center;
+}
+.header__nav a {
   width: 180px;
   height: 40px;
   line-height: 40px;
   text-align: center;
   font-size: 15px;
-  margin-right: 5px; }
-
-nav ul li a {
+  margin-right: 5px;
+}
+.header__nav ul {
+  display: flex;
+  flex-direction: row;
+  /*justify-content:space-between;*/
+  /*align-content: space-between;*/
+  list-style: none;
+}
+.header__nav ul li {
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 15px;
+  margin-right: 5px;
+}
+.header__nav ul li a {
   text-decoration: none;
-  /* color:white; */ }
+  /* color:white; */
+}
 
-nav a {
-  width: 180px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
+footer {
+  height: 100%;
+  background-image: url(/images/img-ng-footer.jpg);
+}
+footer .footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5em;
+}
+footer .footer__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 5em;
+}
+footer .footer__menu .footer__about ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-right: 5em;
+}
+footer .footer__menu .footer__about ul .footer__about--list {
+  padding-bottom: 20px;
+}
+footer .footer__menu .footer__about ul .footer__about--title {
+  padding-bottom: 20px;
+}
+footer .footer__menu .footer__about ul .footer__about--title a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+}
+footer .footer__menu .footer__about ul .footer__about--list a {
+  color: grey;
+  text-decoration: none;
   font-size: 15px;
-  margin-right: 5px; }
+  font-family: "Noto Sans Ethiopic", sans-serif;
+}
+footer .footer__menu .footer__facilities ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-right: 5em;
+}
+footer .footer__menu .footer__facilities ul .footer__facilities--list {
+  padding-bottom: 20px;
+}
+footer .footer__menu .footer__facilities ul .footer__facilities--title {
+  padding-bottom: 10px;
+}
+footer .footer__menu .footer__facilities ul .footer__facilities--title a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+}
+footer .footer__menu .footer__facilities ul .footer__facilities--list a {
+  color: grey;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Noto Sans Ethiopic", sans-serif;
+}
+footer .footer__menu .footer__newsletter ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-right: 5em;
+}
+footer .footer__menu .footer__newsletter ul .footer__newsletter--list {
+  padding-bottom: 20px;
+}
+footer .footer__menu .footer__newsletter ul .footer__newsletter--title {
+  padding-bottom: 20px;
+}
+footer .footer__menu .footer__newsletter ul .footer__newsletter--title {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+}
+footer .footer__menu .footer__newsletter ul .footer__newsletter--list {
+  color: grey;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Noto Sans Ethiopic", sans-serif;
+}
+footer .footer__menu .footer__newsletter ul label {
+  position: relative;
+}
+footer .footer__menu .footer__newsletter ul label input {
+  background-color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  width: 25em;
+  border: none;
+  border-radius: 2px;
+}
+footer .footer__menu .footer__newsletter ul label input::placeholder {
+  color: black;
+}
+footer .footer__menu .footer__newsletter ul label button {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  border-radius: 0 2px 2px 0;
+  position: absolute;
+  right: 0px;
+  background-color: #C8A96A;
+  color: white;
+}
+footer .footer__menu .footer__contact ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+footer .footer__menu .footer__contact ul .footer__contact--list {
+  padding-bottom: 20px;
+}
+footer .footer__menu .footer__contact ul .footer__contact--title {
+  padding-bottom: 20px;
+}
+footer .footer__menu .footer__contact ul .footer__contact--title a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+}
+footer .footer__menu .footer__contact ul .footer__contact--list a {
+  color: grey;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Noto Sans Ethiopic", sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+footer .footer__menu .footer__contact ul .material-symbols-outlined {
+  color: #C8A96A;
+  width: 30px;
+}
+footer .footer__foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid #111516;
+  margin-bottom: 40px;
+}
+footer .footer__foot p {
+  color: grey;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "Noto Sans Ethiopic", sans-serif;
+}
+footer .footer__foot p a {
+  color: #C8A96A;
+}
+footer .footer__foot img {
+  width: 5em;
+}
+footer .footer__foot nav {
+  margin-top: 40px;
+}
+footer .footer__foot nav li {
+  display: inline;
+  color: white;
+  font-size: 15px;
+  background-color: grey;
+  border-radius: 100%;
+  padding: 10px;
+}
+footer .footer__foot nav li:hover {
+  display: inline;
+  color: white;
+  font-size: 15px;
+  background-color: #C8A96A;
+  border-radius: 100%;
+  padding: 10px;
+  transition: 0.4s;
+}
 
 /*# sourceMappingURL=style.css.map */

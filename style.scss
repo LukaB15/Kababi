@@ -1,6 +1,17 @@
-a{
-    background-color: red;
+@mixin footer__list--title {
+    color:white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
 }
+@mixin footer__list--list {
+    color:grey;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+}
+
+
 *{
     box-sizing: border-box;
     margin:0;
@@ -17,12 +28,20 @@ body{
     display: flex;
 }
 
-nav { 
+.header__nav { 
     background-color: transparent;
     margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    a {
+        width:180px;
+        height:40px;
+        line-height:40px;
+        text-align: center;
+        font-size:15px;
+        margin-right: 5px; 
+    }
 
         ul { 
         display: flex;
@@ -30,29 +49,185 @@ nav {
         /*justify-content:space-between;*/
         /*align-content: space-between;*/
         list-style: none; 
-}
-}
-nav ul li {
-    width:180px;
-    height:40px;
-    line-height:40px;
-    text-align: center;
-    font-size:15px;
-    margin-right: 5px;
- 
-}
+            li {
+                width:180px;
+                height:40px;
+                line-height:40px;
+                text-align: center;
+                font-size:15px;
+                margin-right: 5px;
+            
+                    a {
+                    text-decoration: none;
+                    /* color:white; */
+                    }
+                }
+        }
+    } 
+footer{
+    height: 100%;
+    background-image: url(/images/img-ng-footer.jpg);
+    .footer__logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5em;
+    }
+    .footer__menu{    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 5em;
+            .footer__about ul{
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                padding-right: 5em;
+                .footer__about--list{
+                    padding-bottom: 20px;
+                }   
+                .footer__about--title{
+                    padding-bottom: 20px;
+                }       
+                  .footer__about--title a{
+                    @include footer__list--title();
+                }
+                .footer__about--list a{
+                    @include footer__list--list();
+                }
+            }
+            .footer__facilities ul{
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                padding-right: 5em;
+                .footer__facilities--list{
+                    padding-bottom: 20px;
+                }  
+                .footer__facilities--title {
+                    padding-bottom: 10px;
+                }
+                .footer__facilities--title a{
+                    @include footer__list--title();
+                }
+                .footer__facilities--list a{
+                    @include footer__list--list();
+                }
+            }
+            .footer__newsletter ul{
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                padding-right: 5em;
+                .footer__newsletter--list{
+                    padding-bottom: 20px;
+                }  
+                .footer__newsletter--title {
+                    padding-bottom: 20px;
+                }
+                .footer__newsletter--title {
+                    @include footer__list--title();                  
+                }
+                .footer__newsletter--list{
+                    @include footer__list--list();
+                  
+                }
+                label{
+                    position: relative;
+                    input{
+                        background-color: white;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        padding-left: 10px;
+                        width:25em;
+                        border:none;
+                        border-radius: 2px;
+                    }
+                    input::placeholder{
+                        color:black;
+                    }
+                    button{
+                        padding-top: 9px;
+                        padding-bottom: 9px;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        border:none;
+                        border-radius: 0 2px 2px 0;
+                        position: absolute;
+                        right:0px;
+                        background-color: #C8A96A;
+                        color:white;
+                        
+                    }
+                }
+               
+            }
+            .footer__contact ul{
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                .footer__contact--list{
+                    padding-bottom: 20px;
+                }
+                .footer__contact--title {
+                    padding-bottom: 20px;
+                }
+                .footer__contact--title a{
+                    @include footer__list--title();
+                }
+                .footer__contact--list a{
+                    @include footer__list--list();
+                    display: flex;
+                    flex-direction: row;
+                }               
+                .material-symbols-outlined{
+                    color:#C8A96A;
+                    width:30px;
+                }
 
-nav ul li a {
-text-decoration: none;
-
-/* color:white; */}
-
-nav a {
-    width:180px;
-    height:40px;
-    line-height:40px;
-    text-align: center;
-    font-size:15px;
-    margin-right: 5px;
-
+            }
+            
+    }
+    .footer__foot{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;       
+        border-top:1px solid #111516;
+        margin-bottom: 40px;
+        p{
+            color:grey;
+            text-decoration: none;
+            font-size: 12px;
+            font-family: 'Noto Sans Ethiopic', sans-serif;
+            a{
+                color:#C8A96A;
+            }
+        }
+        img{
+            width: 5em;
+            
+            
+        }
+        nav{
+            margin-top: 40px;
+            li{
+              display: inline;
+               color: white;
+               font-size: 15px;
+               background-color: grey;
+               border-radius: 100%;
+               padding: 10px;
+            }
+            li:hover{
+                display: inline;
+                 color: white;
+                 font-size: 15px;
+                 background-color: #C8A96A;
+                 border-radius: 100%;
+                 padding: 10px;
+                 transition: 0.4s;
+              }
+        }
+    }
 }
