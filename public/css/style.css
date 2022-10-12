@@ -50,6 +50,128 @@ body {
   /* color:white; */
 }
 
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog .blog__background p {
+  position: absolute;
+  left: 0;
+  font-size: 180px;
+  z-index: 1;
+  color: #FAF6F0;
+}
+.blog .blog__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  z-index: 999;
+}
+.blog .blog__title h3 {
+  font-family: "Merriweather", serif;
+  font-size: 30px;
+  font-weight: lighter;
+}
+.blog .blog__title h4 {
+  font-family: "Noto Sans Ethiopic", sans-serif;
+  font-size: 15px;
+}
+.blog .blog__article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, auto);
+  grid-gap: 20px;
+  z-index: 999;
+}
+.blog .blog__article .blog__article__bloc {
+  background-color: #FAF6F0;
+}
+.blog .blog__article .blog__article__bloc img {
+  width: 20em;
+}
+.blog .blog__article .blog__article__bloc .bloc_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 30px;
+}
+.blog .blog__article .blog__article__bloc .bloc_info p.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Noto Sans Ethiopic", sans-serif;
+  font-size: 13px;
+  padding-top: 15px;
+}
+.blog .blog__article .blog__article__bloc .bloc_info p.author .material-symbols-outlined {
+  color: #C8A96A;
+  width: 30px;
+}
+.blog .blog__article .blog__article__bloc .bloc_info p.date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px;
+  font-family: "Noto Sans Ethiopic", sans-serif;
+  font-size: 13px;
+  padding-top: 15px;
+}
+.blog .blog__article .blog__article__bloc .bloc_info p.date .material-symbols-outlined {
+  color: #C8A96A;
+  width: 30px;
+}
+.blog .blog__article .blog__article__bloc .bloc_text {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+.blog .blog__article .blog__article__bloc .bloc_text p {
+  font-family: "Merriweather", serif;
+  text-transform: capitalize;
+}
+.blog .blog__article .blog__article__bloc .bloc_button {
+  margin-bottom: 50px;
+  padding-left: 30px;
+}
+.blog .blog__article .blog__article__bloc .bloc_button a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Noto Sans Ethiopic", sans-serif;
+  color: black;
+  background-color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  width: 48%;
+}
+.blog .blog__article .blog__article__bloc .bloc_button a .material-symbols-outlined {
+  color: black;
+  font-size: 20px;
+}
+.blog .blog__article .blog__article__bloc .bloc_button a:hover {
+  color: white;
+  background-color: #C8A96A;
+  border: 1px solid #C8A96A;
+  transition: 0.5s;
+}
+.blog .blog__brand ul {
+  display: flex;
+  flex-direction: row;
+}
+.blog .blog__brand ul li {
+  list-style: none;
+  padding: 35px;
+}
+
 footer {
   height: 100%;
   background-image: url(/images/img-ng-footer.jpg);
@@ -229,6 +351,62 @@ footer .footer__foot nav li:hover {
   display: inline;
   color: white;
   font-size: 15px;
-  margin-right: 5px; }
+  background-color: #C8A96A;
+  border-radius: 100%;
+  padding: 10px;
+  transition: 0.4s;
+}
+
+@media (max-width: 480px) {
+  footer {
+    width: 100%;
+    height: 90em;
+  }
+  footer .footer__menu {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+  }
+  footer .footer__menu .footer__newsletter ul {
+    padding-right: 0;
+  }
+  footer .footer__menu .footer__newsletter ul label input {
+    width: 90%;
+  }
+  footer .footer__foot {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer__foot p {
+    width: 200px;
+    text-align: center;
+  }
+  footer .footer__foot p img {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    width: 100%;
+    height: 90em;
+    background-color: black;
+  }
+  footer .footer__menu {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5em;
+  }
+  footer .footer__foot {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer__foot p {
+    width: 200px;
+    text-align: center;
+  }
+  footer .footer__foot p img {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
