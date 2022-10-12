@@ -66,17 +66,72 @@ body{
     } 
 
 
-
-.blog{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .blog__background{
+.team{
+    background-image: url(/images/imgbg-ourchefs.jpg);
+    z-index: 0;
+    .team__background{
         p{
             position: absolute;
             left:0;
             font-size: 180px;
             z-index: 1;
+            color:#FAF6F0;
+            opacity: 0.05;
+        }
+    }
+        .team__title{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 100px;
+            padding-top: 100px;
+            z-index: 2;
+            h3{
+                font-family: 'Merriweather', serif;
+                font-size: 30px;
+                font-weight:lighter;
+                color: white;
+            }
+            h4{
+                font-family: 'Noto Sans Ethiopic', sans-serif;
+                font-size: 15px;
+                color:white;
+            }
+        
+        
+    }
+    .team__pic{
+        padding-bottom: 100px;
+          ul{
+            display: grid;
+            grid-template-columns: repeat(4,20%);
+            grid-template-rows: repeat(1, auto);
+            grid-gap: 1px;
+            align-items: center;
+            justify-content: center;
+            li{
+                img{
+                    width:80%;
+                }
+            }
+          }  
+    }
+}
+
+
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    .blog__background{
+        p{
+            position: absolute;
+            left:0;
+            font-size: 180px;
+            z-index: -999;
             color:#FAF6F0;
         }
     }
@@ -371,6 +426,24 @@ footer{
 
 @media (max-width:480px){
 
+    .team{
+        .team__pic{
+            padding-bottom: 100px;
+              ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                li{
+                    img{
+                        width:100%;
+                    }
+                }
+              }  
+        }
+    }
+
+
     .blog{
         .blog__background{
             p{              
@@ -433,6 +506,30 @@ footer{
 
 
 @media (max-width:768px) and (min-width:481px){
+
+    .team{
+        .team__background{
+            p{              
+                font-size: 100px;
+                
+            }
+        }
+        .team__pic{
+            padding-bottom: 100px;
+              ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                li{
+                    img{
+                        width:100%;
+                    }
+                }
+              }  
+        }
+    }
+
 
     .blog{
         .blog__article{

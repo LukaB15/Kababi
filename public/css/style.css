@@ -50,16 +50,64 @@ body {
   /* color:white; */
 }
 
+.team {
+  background-image: url(/images/imgbg-ourchefs.jpg);
+  z-index: 0;
+}
+.team .team__background p {
+  position: absolute;
+  left: 0;
+  font-size: 180px;
+  z-index: 1;
+  color: #FAF6F0;
+  opacity: 0.05;
+}
+.team .team__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  z-index: 2;
+}
+.team .team__title h3 {
+  font-family: "Merriweather", serif;
+  font-size: 30px;
+  font-weight: lighter;
+  color: white;
+}
+.team .team__title h4 {
+  font-family: "Noto Sans Ethiopic", sans-serif;
+  font-size: 15px;
+  color: white;
+}
+.team .team__pic {
+  padding-bottom: 100px;
+}
+.team .team__pic ul {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: repeat(1, auto);
+  grid-gap: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.team .team__pic ul li img {
+  width: 80%;
+}
+
 .blog {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 100px;
 }
 .blog .blog__background p {
   position: absolute;
   left: 0;
   font-size: 180px;
-  z-index: 1;
+  z-index: -999;
   color: #FAF6F0;
 }
 .blog .blog__title {
@@ -358,6 +406,18 @@ footer .footer__foot nav li:hover {
 }
 
 @media (max-width: 480px) {
+  .team .team__pic {
+    padding-bottom: 100px;
+  }
+  .team .team__pic ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .team .team__pic ul li img {
+    width: 100%;
+  }
   .blog .blog__background p {
     font-size: 130px;
   }
@@ -404,6 +464,21 @@ footer .footer__foot nav li:hover {
   }
 }
 @media (max-width: 768px) and (min-width: 481px) {
+  .team .team__background p {
+    font-size: 100px;
+  }
+  .team .team__pic {
+    padding-bottom: 100px;
+  }
+  .team .team__pic ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .team .team__pic ul li img {
+    width: 100%;
+  }
   .blog .blog__article {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
