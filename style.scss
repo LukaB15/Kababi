@@ -208,35 +208,182 @@ body{
             padding-right: 30px;
                 .first-column-first-row{
                     .pic1{
-                        transition: 0.3s ease-in-out;
-                    }
-                    .pic1:hover{
-                        -webkit-filter: brightness(.5);
-                        filter: brightness(.5);
-                        transition: 0.5s ease-in-out ;                     
+                        position: relative;
+                        background-image: url("/images/img1gallerybox.jpg");
+                        width: 630px;
+                        height: 400px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        transition: 0.5s ease-in-out ; 
+                    
+                        .pic__title{
+                            color: white;
+                            font-size: 40px;
+                            font-family: 'Merriweather', serif;
+                            opacity: 0;
+                            transition: 0.5s ease-in-out ;
+                         
                         }
+                        .pic__title2{
+                            color: white;
+                            font-size: 20px;
+                            font-family: 'Merriweather', serif;
+                            opacity: 0;
+                            transition: 0.5s ease-in-out ;
+                          
+                        }
+                        .material-symbols-outlined{
+                            color: white;
+                            position: absolute;
+                            top:20px;
+                            right: 30px;
+                            opacity: 0;
+                            transition: 0.5s ease-in-out ;  
+                        }
+                    }
+                   
+                    .pic1:hover{
+                        background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url("/images/img1gallerybox.jpg");
+                        transition: 0.5s ease-in-out ;
+                    }
+                    .pic1:hover .pic__title{                  
+                        transition: 0.5s ease-in-out ;   
+                        opacity: 1;  
+                       
+                    
+                                  
+                        }
+                    .pic1:hover .pic__title2{                        
+                            transition: 0.5s ease-in-out ;   
+                            opacity: 1;   
+                                  
+                            }
+                    .pic1:hover .material-symbols-outlined{                             
+                                transition: 0.5s ease-in-out ;   
+                                opacity: 1;   
+                                      
+                                }
+
                 }
                 .first-column-second-row{
                     display: flex;
                     justify-content: flex-start;
                     padding-top: 10px;
                         .pic2{
-                        padding-right:30px;
-                        transition: 0.3s ease-in-out;
+                        margin-right:30px;
+                        width:300px;
+                        height: 400px;
+                        background-image: url(/images/img4gallerybox.jpg);
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        transition: 0.5s ease-in-out ;
+                        .pic__title{
+                            color: white;
+                            font-size: 40px;
+                            font-family: 'Merriweather', serif;
+                            opacity: 0;
+                            transition: 0.5s ease-in-out ;
+                         
+                        }
+                        .pic__title2{
+                            color: white;
+                            font-size: 20px;
+                            font-family: 'Merriweather', serif;
+                            opacity: 0;
+                            transition: 0.5s ease-in-out ;
+                          
+                        }
+                        .material-symbols-outlined{
+                            color: white;
+                            position: absolute;
+                            top:20px;
+                            right: 30px;
+                            opacity: 0;
+                            transition: 0.5s ease-in-out ;  
+                        }
                         }
                         .pic2:hover{
-                        -webkit-filter: brightness(.5);
-                        filter: brightness(.5);
-                        transition: 0.5s ease-in-out ;                     
+                            background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url("/images/img4gallerybox.jpg");
+                            transition: 0.5s ease-in-out ;
                         }
+                        .pic2:hover .pic__title{                          
+                            transition: 0.5s ease-in-out ;   
+                            opacity: 1;  
+                           
+                        
+                                      
+                            }
+                        .pic2:hover .pic__title2{                              
+                                transition: 0.5s ease-in-out ;   
+                                opacity: 1;   
+                                      
+                                }
+                        .pic2:hover .material-symbols-outlined{                          
+                                    transition: 0.5s ease-in-out ;   
+                                    opacity: 1;   
+                                          
+                                    }
+                        
                         .pic3{
-                            transition: 0.3s ease-in-out;
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            width:300px;
+                            height: 400px;
+                            background-image: url(/images/img5gallerybox.jpg);
+                            transition: 0.5s ease-in-out ;
+                            .pic__title{
+                                color: white;
+                                font-size: 40px;
+                                font-family: 'Merriweather', serif;
+                                opacity: 0;
+                                transition: 0.5s ease-in-out ;
+                             
+                            }
+                            .pic__title2{
+                                color: white;
+                                font-size: 20px;
+                                font-family: 'Merriweather', serif;
+                                opacity: 0;
+                                transition: 0.5s ease-in-out ;
+                              
+                            }
+                            .material-symbols-outlined{
+                                color: white;
+                                position: absolute;
+                                top:20px;
+                                right: 30px;
+                                opacity: 0;
+                                transition: 0.5s ease-in-out ;  
+                            }
                         }
                         .pic3:hover{
-                        -webkit-filter: brightness(.5);
-                        filter: brightness(.5);
-                        transition: 0.5s ease-in-out ;                     
+                            background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url("/images/img5gallerybox.jpg");
+                            transition: 0.5s ease-in-out ;                        }
+                        .pic3:hover .pic__title{
+                            transition: 0.5s ease-in-out ;   
+                            opacity: 1;  
+                           
+                        
+                                      
                             }
+                        .pic3:hover .pic__title2{
+                                transition: 0.5s ease-in-out ;   
+                                opacity: 1;   
+                                      
+                                }
+                        .pic3:hover .material-symbols-outlined{
+                                    transition: 0.5s ease-in-out ;   
+                                    opacity: 1;   
+                                          
+                                    }
                     
                 }
             
@@ -249,32 +396,174 @@ body{
                 justify-content: flex-end;
                 padding-bottom: 10px;
                 .pic5{
-                    padding-left: 30px;
+                    margin-left: 30px;
+                    width: 300px;
+                    height: 400px;
+                    background-image:url(/images/img3gallerybox.jpg) ;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
                     transition: 0.3s ease-in-out; 
+                    .pic__title{
+                        color: white;
+                        font-size: 40px;
+                        font-family: 'Merriweather', serif;
+                        opacity: 0;
+                        transition: 0.5s ease-in-out ;
+                     
+                    }
+                    .pic__title2{
+                        color: white;
+                        font-size: 20px;
+                        font-family: 'Merriweather', serif;
+                        opacity: 0;
+                        transition: 0.5s ease-in-out ;
+                      
+                    }
+                    .material-symbols-outlined{
+                        color: white;
+                        position: absolute;
+                        top:20px;
+                        right: 30px;
+                        opacity: 0;
+                        transition: 0.5s ease-in-out ;  
+                    }
                 }
                 .pic5:hover{
-                    -webkit-filter: brightness(.5);
-                    filter: brightness(.5);
-                    transition: 0.3s ease-in-out;                     
+                    background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url("/images/img3gallerybox.jpg");
+                    transition: 0.5s ease-in-out ;                        }
+                .pic5:hover .pic__title{
+                    transition: 0.5s ease-in-out ;   
+                    opacity: 1;  
+                   
+                
+                              
                     }
+                .pic5:hover .pic__title2{
+                        transition: 0.5s ease-in-out ;   
+                        opacity: 1;   
+                              
+                        }
+                .pic5:hover .material-symbols-outlined{
+                            transition: 0.5s ease-in-out ;   
+                            opacity: 1;   
+                                  
+                            }
                     .pic4{
                         transition: 0.3s ease-in-out;
-                    }
-                .pic4:hover{
-                    -webkit-filter: brightness(.5);
-                    filter: brightness(.5);
-                    transition: 0.5s ease-in-out ;                     
+                        width: 300px;
+                        height: 400px;
+                        background-image:url(/images/img2gallerybox.jpg) ;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        .pic__title{
+                            color: white;
+                            font-size: 40px;
+                            font-family: 'Merriweather', serif;
+                            opacity: 0;
+                            transition: 0.5s ease-in-out ;
+                         
                         }
+                        .pic__title2{
+                            color: white;
+                            font-size: 20px;
+                            font-family: 'Merriweather', serif;
+                            opacity: 0;
+                            transition: 0.5s ease-in-out ;
+                          
+                        }
+                        .material-symbols-outlined{
+                            color: white;
+                            position: absolute;
+                            top:20px;
+                            right: 30px;
+                            opacity: 0;
+                            transition: 0.5s ease-in-out ;  
+                        }
+                    
+                    }
+                    .pic4:hover{
+                        background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url("/images/img2gallerybox.jpg");
+                        transition: 0.5s ease-in-out ;                        }
+                    .pic4:hover .pic__title{
+                        transition: 0.5s ease-in-out ;   
+                        opacity: 1;  
+                       
+                    
+                                  
+                        }
+                    .pic4:hover .pic__title2{
+                            transition: 0.5s ease-in-out ;   
+                            opacity: 1;   
+                                  
+                            }
+                    .pic4:hover .material-symbols-outlined{
+                                transition: 0.5s ease-in-out ;   
+                                opacity: 1;   
+                                      
+                                }
             }
             .second-column-second-row{
                 .pic6{
-                    transition: 0.3s ease-in-out;
+                    width: 630px;
+                    height: 400px;
+                    background-image: url(/images/img6gallerybox.jpg);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    transition: 0.3s ease-in-out; 
+                    .pic__title{
+                        color: white;
+                        font-size: 40px;
+                        font-family: 'Merriweather', serif;
+                        opacity: 0;
+                        transition: 0.5s ease-in-out ;
+                     
+                    }
+                    .pic__title2{
+                        color: white;
+                        font-size: 20px;
+                        font-family: 'Merriweather', serif;
+                        opacity: 0;
+                        transition: 0.5s ease-in-out ;
+                      
+                    }
+                    .material-symbols-outlined{
+                        color: white;
+                        position: absolute;
+                        top:20px;
+                        right: 30px;
+                        opacity: 0;
+                        transition: 0.5s ease-in-out ;  
+                    }
                 }
                 .pic6:hover{
-                    -webkit-filter: brightness(.5);
-                    filter: brightness(.5);
-                    transition: 0.5s ease-in-out ;                     
+                    background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url("/images/img6gallerybox.jpg");
+                    transition: 0.5s ease-in-out ;                        }
+                .pic6:hover .pic__title{
+                    transition: 0.5s ease-in-out ;   
+                    opacity: 1;  
+                   
+                
+                              
                     }
+                .pic6:hover .pic__title2{
+                        transition: 0.5s ease-in-out ;   
+                        opacity: 1;   
+                              
+                        }
+                .pic6:hover .material-symbols-outlined{
+                            transition: 0.5s ease-in-out ;   
+                            opacity: 1;   
+                                  
+                            }
             }
         }
     }
@@ -701,15 +990,13 @@ footer{
             .first-column-first-row{
                 display: flex;
                 align-items: center;
-                a{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                
                 .pic1{
-                    width: 80%;
+                    display: none !important;
+                   
                     
                 }
-            }
+            
             }
             .first-column-second-row{
                 flex-direction: column;
@@ -734,14 +1021,13 @@ footer{
                 padding-left: 0 !important;
                 padding-top: 10px;
             }
-            a{
-                display: flex;
-                justify-content: center;
+
+         .second-column-second-row{
             .pic6{
-                width:80%;
-                
+                display: none !important;
             }
-        }
+            }
+        
         }
     }
     
@@ -893,25 +1179,23 @@ footer{
             .first-column-first-row{
                 display: flex;
                 align-items: center;
-                a{
-                    display: flex;
-                    align-items: center;
+           
                     justify-content: center;
                 .pic1{
-                    width: 80%;
+                    display: none;
                     
                 }
-            }
+            
             }
             .first-column-second-row{
                 flex-direction: column;
                 align-items: center;
                 .pic2{
-                    padding-right: 0 !important;
+                    margin-right: 0 !important;
                     
                 }
                 .pic3{
-                    padding-top: 10px;
+                    margin-top: 10px;
                 }
             }
         }
@@ -920,20 +1204,18 @@ footer{
                 align-items: center;
             }
             .pic4{
-                padding-top: 10px;
+                margin-top: 10px;
             }
             .pic5{
-                padding-left: 0 !important;
-                padding-top: 10px;
+                margin-left: 0 !important;
+                margin-top: 10px;
             }
-            a{
-                display: flex;
-                justify-content: center;
-            .pic6{
-                width:80%;
-                
-            }
-        }
+            .second-column-second-row{
+                .pic6{
+                    display: none !important;
+                }
+                }
+        
         }
     }
     
@@ -1097,11 +1379,11 @@ footer{
                 flex-direction: column;
                 align-items: center;
                 .pic2{
-                    padding-right: 0 !important;
+                    margin-right: 0 !important;
                     
                 }
                 .pic3{
-                    padding-top: 10px;
+                    margin-top: 10px;
                 }
             }
         }
@@ -1110,11 +1392,12 @@ footer{
                 align-items: center;
             }
             .pic4{
-                padding-top: 10px;
+                margin-top: 10px;
             }
             .pic5{
-                padding-left: 0 !important;
-                padding-top: 10px;
+                margin-left: 0 !important;
+                margin-top: 10px;
+                
             }
             a{
                 display: flex;
