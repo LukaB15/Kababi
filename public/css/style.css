@@ -188,6 +188,7 @@ body {
 .team {
   background-image: url(/images/imgbg-ourchefs.jpg);
   z-index: 0;
+  width: 100%;
 }
 .team .team__background p {
   position: absolute;
@@ -548,14 +549,17 @@ footer .footer__foot nav li:hover {
   transition: 0.4s ease-in-out;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) and (min-width: 321px) {
   .gallery .gallery__background p {
-    font-size: 100px;
+    font-size: 60px;
   }
   .gallery .gallery__title {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .gallery .gallery__title h3 {
+    font-size: 20px;
   }
   .gallery .gallery__pic {
     flex-direction: column;
@@ -604,6 +608,12 @@ footer .footer__foot nav li:hover {
   .gallery .gallery__pic a .pic6 {
     width: 80%;
   }
+  .team .team__background p {
+    font-size: 60px;
+  }
+  .team .team__title h3 {
+    font-size: 20px;
+  }
   .team .team__pic {
     padding-bottom: 100px;
   }
@@ -617,7 +627,135 @@ footer .footer__foot nav li:hover {
     width: 100%;
   }
   .blog .blog__background p {
-    font-size: 130px;
+    font-size: 80px;
+  }
+  .blog .blog__title h3 {
+    font-size: 25px;
+  }
+  .blog .blog__article {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+  }
+  .blog .blog__brand ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog .blog__brand ul li {
+    list-style: none;
+    padding: 35px;
+  }
+  footer {
+    width: 100%;
+    height: 90em;
+  }
+  footer .footer__menu {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+  }
+  footer .footer__menu .footer__newsletter ul {
+    padding-right: 0;
+  }
+  footer .footer__menu .footer__newsletter ul label input {
+    width: 90%;
+  }
+  footer .footer__foot {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer__foot p {
+    width: 200px;
+    text-align: center;
+  }
+  footer .footer__foot p img {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  .gallery .gallery__background p {
+    font-size: 60px;
+  }
+  .gallery .gallery__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .gallery .gallery__title h3 {
+    font-size: 20px;
+  }
+  .gallery .gallery__pic {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery .gallery__pic .first-column {
+    padding-right: 0;
+  }
+  .gallery .gallery__pic .first-column .first-column-first-row {
+    display: flex;
+    align-items: center;
+  }
+  .gallery .gallery__pic .first-column .first-column-first-row a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .gallery .gallery__pic .first-column .first-column-first-row a .pic1 {
+    width: 80%;
+  }
+  .gallery .gallery__pic .first-column .first-column-second-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery .gallery__pic .first-column .first-column-second-row .pic2 {
+    padding-right: 0 !important;
+  }
+  .gallery .gallery__pic .first-column .first-column-second-row .pic3 {
+    padding-top: 10px;
+  }
+  .gallery .gallery__pic .second-column-first-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery .gallery__pic .pic4 {
+    padding-top: 10px;
+  }
+  .gallery .gallery__pic .pic5 {
+    padding-left: 0 !important;
+    padding-top: 10px;
+  }
+  .gallery .gallery__pic a {
+    display: flex;
+    justify-content: center;
+  }
+  .gallery .gallery__pic a .pic6 {
+    width: 80%;
+  }
+  .team .team__background p {
+    font-size: 60px;
+  }
+  .team .team__title h3 {
+    font-size: 20px;
+  }
+  .team .team__pic {
+    padding-bottom: 100px;
+  }
+  .team .team__pic ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .team .team__pic ul li img {
+    width: 100%;
+  }
+  .blog .blog__background p {
+    font-size: 80px;
+  }
+  .blog .blog__title h3 {
+    font-size: 25px;
   }
   .blog .blog__article {
     display: grid;

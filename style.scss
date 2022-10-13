@@ -215,6 +215,7 @@ body{
 .team{
     background-image: url(/images/imgbg-ourchefs.jpg);
     z-index: 0;
+    width:100%;
     .team__background{
         p{
             position: absolute;
@@ -576,12 +577,12 @@ footer{
     }
 }
 
-@media (max-width:480px){
+@media (max-width:480px) and (min-width:321px){
 
     .gallery{
         .gallery__background{
             p{
-                font-size:100px;
+                font-size:60px;
             }
             
         }
@@ -589,7 +590,9 @@ footer{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-        
+                h3{
+                    font-size: 20px;
+                }
             }
         .gallery__pic{
             
@@ -647,7 +650,18 @@ footer{
 
 
     .team{
+        .team__background{
+            p{
+                font-size: 60px;
+            }
+        }
+        .team__title{
+            h3{
+                font-size: 20px;
+            }
+        }
         .team__pic{
+            
             padding-bottom: 100px;
               ul{
                 display: flex;
@@ -667,8 +681,13 @@ footer{
     .blog{
         .blog__background{
             p{              
-                font-size: 130px;
+                font-size: 80px;
                 
+            }
+        }
+        .blog__title{
+            h3{
+                font-size:25px;
             }
         }
         .blog__article{
@@ -695,7 +714,174 @@ footer{
     footer{
         width:100%;
         height: 90em;
-     
+       
+        .footer__menu{
+            display:flex;
+            flex-direction:column;
+            padding-left:2em;
+            .footer__newsletter ul{
+                padding-right:0;
+                label{
+                    input{
+                        width:90%;
+                    }
+                }
+            }
+            
+        }
+        .footer__foot{
+            flex-direction: column;
+            align-items: center;
+            p{
+                width:200px;
+                text-align: center;
+                img{
+                    display:none;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:320px){
+
+    .gallery{
+        .gallery__background{
+            p{
+                font-size:60px;
+            }
+            
+        }
+        .gallery__title{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                h3{
+                    font-size: 20px;
+                }
+            }
+        .gallery__pic{
+            
+            flex-direction: column;
+            align-items: center;
+            .first-column{
+                padding-right:0;
+            .first-column-first-row{
+                display: flex;
+                align-items: center;
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                .pic1{
+                    width: 80%;
+                    
+                }
+            }
+            }
+            .first-column-second-row{
+                flex-direction: column;
+                align-items: center;
+                .pic2{
+                    padding-right: 0 !important;
+                    
+                }
+                .pic3{
+                    padding-top: 10px;
+                }
+            }
+        }
+            .second-column-first-row{
+                flex-direction: column;
+                align-items: center;
+            }
+            .pic4{
+                padding-top: 10px;
+            }
+            .pic5{
+                padding-left: 0 !important;
+                padding-top: 10px;
+            }
+            a{
+                display: flex;
+                justify-content: center;
+            .pic6{
+                width:80%;
+                
+            }
+        }
+        }
+    }
+    
+
+
+    .team{
+        .team__background{
+            p{
+                font-size: 60px;
+            }
+        }
+        .team__title{
+            h3{
+                font-size: 20px;
+            }
+        }
+        .team__pic{
+            
+            padding-bottom: 100px;
+              ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                li{
+                    img{
+                        width:100%;
+                    }
+                }
+              }  
+        }
+    }
+
+
+    .blog{
+        .blog__background{
+            p{              
+                font-size: 80px;
+                
+            }
+        }
+        .blog__title{
+            h3{
+                font-size:25px;
+            }
+        }
+        .blog__article{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, auto);
+            grid-gap: 20px;
+        }
+            .blog__brand{
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    li{
+                        list-style: none;
+                        padding: 35px;
+                       
+                    }
+                }
+            }
+        }
+    
+   
+    footer{
+        width:100%;
+        height: 90em;
+       
         .footer__menu{
             display:flex;
             flex-direction:column;
