@@ -65,6 +65,104 @@ body{
         }
     } 
 
+.our-menu{
+    background-color: #FAF6F0;
+    z-index: auto;
+    .our-menu__background{
+        p{
+            position: absolute;
+            left:0;
+            font-size: 180px;
+            z-index: 2;
+            color:#F5EEE3;
+            
+        }
+        img{
+            position:absolute;
+            right:0;
+            top:0;
+            width:30%;
+            height: auto;
+           z-index: 1;
+        }
+        .secondpic{
+            position:absolute;
+            left:0;
+            top:230px;
+            width:15%;
+            height: auto;
+           z-index: 1;
+        }
+    }
+    .our-menu__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 90px;
+        padding-top: 80px;
+        h3{
+            font-family: 'Merriweather', serif;
+            font-size: 30px;
+            font-weight:lighter;
+            color: black;
+            z-index: 2;
+        }
+        h4{
+            font-family: 'Noto Sans Ethiopic', sans-serif;
+            font-size: 15px;
+            color:black;
+            z-index: 3;
+        }
+    }
+    .our-menu__menu{
+        display: grid;
+        grid-template-columns: 35% 35%;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-gap:30px;
+        justify-content: center;
+        padding-bottom: 213px;
+        z-index: 4;
+        .our_menu__list{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: white;
+            padding-top: 20px;
+            border-radius: 5px;
+            z-index: 999;
+            .list__text{
+                padding-left: 30px;
+                .list__title{
+                    font-family: 'Merriweather', serif;
+                   padding-bottom: 10px;        
+                   font-size: 15px;
+                   text-transform: capitalize;
+                }
+                .list__title2{
+                    font-family: 'Merriweather', serif;
+                    font-size: 12px;
+                    text-transform: capitalize;
+                }
+            }
+            .list__price{
+                font-family: 'Merriweather', serif;
+                color: #C8A96A;
+                font-size: 30px;
+                padding-right: 30px;
+            }
+        }
+        .our_menu__list:hover{
+            background-image: repeating-linear-gradient(0deg, #C8A96A, #C8A96A 9px, transparent 9px, transparent 13px, #C8A96A 13px), repeating-linear-gradient(90deg, #C8A96A, #C8A96A 9px, transparent 9px, transparent 13px, #C8A96A 13px), repeating-linear-gradient(180deg, #C8A96A, #C8A96A 9px, transparent 9px, transparent 13px, #333333 13px), repeating-linear-gradient(270deg, #C8A96A, #C8A96A 9px, transparent 9px, transparent 13px, #C8A96A 13px);
+            background-size: 2px 100%, 100% 2px, 2px 100% , 100% 2px;
+            background-position: 0 0, 0 0, 100% 0, 0 100%;
+            background-repeat: no-repeat;
+           
+        }
+       
+    }
+}
+
+
 .gallery{
 
     .gallery__background{
@@ -746,6 +844,31 @@ footer{
 
 @media (max-width:320px){
 
+    .our-menu{
+        padding-bottom: 250px;
+        .our-menu__background{
+            p{
+                font-size: 60px;
+            }
+            img{
+                visibility: hidden;
+            }
+            .secondpic{
+                visibility: hidden;
+            }
+        }
+        .our-menu__title{
+            h3{
+                font-size: 20px;
+            }
+        }
+        .our-menu__menu{
+            grid-template-columns: 80%;
+            grid-template-rows: 15% 15% 15% 15% 15% 15% 15% 15%;
+        }
+    }
+
+    
     .gallery{
         .gallery__background{
             p{
@@ -911,7 +1034,32 @@ footer{
 }
 
 
-@media (max-width:768px) and (min-width:481px){
+@media (max-width:768px) and (min-width:480px){
+
+    .our-menu{
+        padding-bottom: 250px;
+        .our-menu__background{
+            p{
+                font-size: 50px;
+            }
+            img{
+                visibility: hidden;
+            }
+            .secondpic{
+                visibility: hidden;
+            }
+        }
+        .our-menu__title{
+            h3{
+                font-size: 20px;
+            }
+        }
+        .our-menu__menu{
+            grid-template-columns: 80%;
+            grid-template-rows: 15% 15% 15% 15% 15% 15% 15% 15%;
+        }
+    }
+
 
     .gallery{
         .gallery__background{
@@ -1013,10 +1161,9 @@ footer{
         }
         .blog__brand{
             ul{
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(2, auto);
-                grid-gap: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 li{
                     list-style: none;
                     padding: 35px;
