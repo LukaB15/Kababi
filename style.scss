@@ -64,7 +64,135 @@ body{
                 }
         }
     } 
+.category{
+    padding-bottom: 100px;
+    .category__first{
+        background-image: url(../../images/imgbgcategory.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        -webkit-box-shadow: inset -14px -50px 50px 50px rgba(250,246,240,0.7); 
+        box-shadow: inset -14px -50px 50px 50px rgba(250,246,240,0.8);
+        z-index: -1;
+        height: 750px;
+        .category__background{
+            p{
+                position: absolute;
+                left:0;
+                font-size: 180px;
+                z-index: 0;
+                color:#C8A96A;
+                opacity: 0.1;
+            }
+        }
+        .category__title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 150px;
+            padding-top: 50px;
+            h3{
+                font-family: 'Merriweather', serif;
+                font-size: 30px;
+                font-weight:lighter;
+                color: black;
+                z-index: 2;
+            }
+            h4{
+                font-family: 'Noto Sans Ethiopic', sans-serif;
+                font-size: 15px;
+                color:black;
+                z-index: 2;
+            }
+        }
+        .category__list{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .category__menu{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                border-radius: 5px;
+                transition: 0.5s ease-in-out;
+                .logo{
+                    font-size: 60px;
+                    color: #C8A96A;
+                }
+                .arrow{
+                    font-size: 30px;
+                }
+                p{
+                    font-family: 'Merriweather', serif;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+            .category__menu:hover{
+                background-color: #C8A96A;
+                transition: 0.5s ease-in-out;
+            }
+            .category__menu:hover .logo{
+                color:white;
+                transition: 0.3s ease-in-out;
+            }
+            .category__menu:hover p{
+                color:white;
+                transition: 0.3s ease-in-out;
+            }
+            .category__menu:hover .arrow{
+                color:white;
+                transition: 0.3s ease-in-out;
+            }
+            .pizza{
+                padding-left: 40px;
+                padding-right: 40px;   
+            }
+            .coffee{
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            .shrimp{
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+    }
+    .category__second{
+        .category__pic{
+            position: relative;    
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            .first-pic{
+                margin-right: 300px;
+            }
+            .second-pic{
+                position: absolute;
+                bottom: -70px;
+                width:40%;
+                border-radius: 50%;
+               
+            }
+            .third-pic{
+                margin-left: 300px;
+            }
+        }
+    }
+}
+
 .about-us{
+    position: relative;
     .about-us__background{
         p{
             position: absolute;
@@ -145,7 +273,6 @@ body{
         }
     }
 }
-
 
 
 .our-menu{
@@ -1051,6 +1178,42 @@ footer{
 @media (max-width:480px) and (min-width:321px){
 
 
+    .category{
+        padding-bottom: 0px;
+        background-size: cover;
+        .category__first{
+            height: auto;
+            .category__background{
+                p{
+                    font-size: 60px;
+                }
+        }
+        .category__title{
+            h3{
+                font-size: 20px;
+            }
+        }
+        .category__list{
+            flex-direction: column;
+           
+        }
+    }
+    .category__second{
+        display: none;
+        .category__pic{
+            
+            .first-pic{
+                display: none;
+            }
+            .second-pic{
+                display: none;
+            }
+            .third-pic{
+                display: none;
+            }
+        }
+    }
+}
 
     .about-us{
         .about-us__background{
@@ -1242,6 +1405,44 @@ footer{
 
 
 @media (max-width:320px){
+
+    .category{
+        padding-bottom: 0px;
+        background-size: cover;
+        .category__first{
+            height: auto;
+            .category__background{
+                p{
+                    font-size: 60px;
+                }
+        }
+        .category__title{
+            h3{
+                font-size: 20px;
+            }
+        }
+        .category__list{
+            flex-direction: column;
+           
+        }
+    }
+    .category__second{
+        display: none;
+        .category__pic{
+            
+            .first-pic{
+                display: none;
+            }
+            .second-pic{
+                display: none;
+            }
+            .third-pic{
+                display: none;
+            }
+        }
+    }
+}
+
 
     .about-us{
         .about-us__background{
@@ -1464,6 +1665,40 @@ footer{
 
 
 @media (max-width:768px) and (min-width:480px){
+
+    .category{
+        padding-bottom: 0px;
+        background-size: cover;
+        .category__first{
+            height: auto;
+            .category__background{
+                p{
+                    font-size: 60px;
+                }
+        }
+        .category__list{
+            flex-direction: column;
+           
+        }
+    }
+    .category__second{
+        display: none;
+        .category__pic{
+            
+            .first-pic{
+                display: none;
+            }
+            .second-pic{
+                display: none;
+            }
+            .third-pic{
+                display: none;
+            }
+        }
+    }
+}
+
+
 
     .about-us{
         .about-us__background{
