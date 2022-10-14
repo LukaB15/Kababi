@@ -315,7 +315,7 @@ body {
   grid-template-rows: 25% 25% 25% 25%;
   grid-gap: 30px;
   justify-content: center;
-  padding-bottom: 220px;
+  padding-bottom: 190px;
   z-index: 4;
 }
 .our-menu .our-menu__menu .our_menu__list {
@@ -1178,7 +1178,7 @@ footer .footer__foot nav li:hover {
     margin-left: auto;
   }
   .our-menu {
-    padding-bottom: 300px !important;
+    padding-bottom: 330px !important;
   }
   .our-menu .our-menu__title h3 {
     font-size: 30px !important;
