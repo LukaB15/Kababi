@@ -1716,5 +1716,16 @@ footer .footer__foot nav li:hover {
     display: none;
   }
 }
+@media (max-width: 500px) and (min-width: 480px) {
+  .gallery .pic1 {
+    display: none !important;
+  }
+  .gallery .pic6 {
+    display: none !important;
+  }
+  .our-menu {
+    padding-bottom: 350px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

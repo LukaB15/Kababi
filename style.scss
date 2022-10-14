@@ -2000,3 +2000,17 @@ footer{
         }
     }
 }
+
+@media (max-width:500px) and (min-width:480px){
+    .gallery{
+        .pic1{
+            display: none !important;
+        }
+        .pic6{
+            display: none !important;
+        }
+    }
+    .our-menu{
+        padding-bottom: 350px;
+    }
+}
