@@ -54,18 +54,17 @@ body {
   padding-bottom: 100px;
 }
 .category .category__first {
-  background-image: url(../../images/imgbgcategory.jpg);
-  background-size: contain;
+  background: linear-gradient(90deg, rgba(200, 169, 106, 0.1) 0%, rgba(200, 169, 106, 0.1) 100%), url(../../images/imgbgcategory.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
-  -webkit-box-shadow: inset -14px -50px 50px 50px rgba(250, 246, 240, 0.7);
-  box-shadow: inset -14px -50px 50px 50px rgba(250, 246, 240, 0.8);
   z-index: -1;
-  height: 750px;
+  height: 950px;
 }
 .category .category__first .category__background p {
   position: absolute;
+  top: -30px;
   left: 0;
-  font-size: 180px;
+  font-size: 250px;
   z-index: 0;
   color: #C8A96A;
   opacity: 0.1;
@@ -79,14 +78,15 @@ body {
 }
 .category .category__first .category__title h3 {
   font-family: "Merriweather", serif;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: lighter;
   color: black;
   z-index: 2;
+  padding-bottom: 30px;
 }
 .category .category__first .category__title h4 {
   font-family: "Noto Sans Ethiopic", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   color: black;
   z-index: 2;
 }
@@ -151,6 +151,9 @@ body {
   padding-left: 50px;
   padding-right: 50px;
 }
+.category .category__second {
+  padding-bottom: 150px;
+}
 .category .category__second .category__pic {
   position: relative;
   display: flex;
@@ -161,10 +164,10 @@ body {
 }
 .category .category__second .category__pic .first-pic {
   margin-right: 300px;
+  margin-top: 50px;
 }
 .category .category__second .category__pic .second-pic {
   position: absolute;
-  bottom: -70px;
   width: 40%;
   border-radius: 50%;
 }
@@ -177,9 +180,10 @@ body {
 }
 .about-us .about-us__background p {
   position: absolute;
+  top: -30px;
   left: 0;
-  font-size: 180px;
-  z-index: -1;
+  font-size: 220px;
+  z-index: 0;
   color: #C8A96A;
   opacity: 0.1;
 }
@@ -197,14 +201,15 @@ body {
 }
 .about-us .about-us__title h3 {
   font-family: "Merriweather", serif;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: lighter;
   color: black;
   z-index: 2;
+  padding-bottom: 30px;
 }
 .about-us .about-us__title h4 {
   font-family: "Noto Sans Ethiopic", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   color: black;
   z-index: 2;
 }
@@ -245,6 +250,14 @@ body {
   display: flex;
   align-items: center;
   width: 180px;
+  transition: 0.3s ease-in-out;
+  border: 1px solid transparent;
+}
+.about-us .about-us__info .info__text .info__btn:hover {
+  color: #C8A96A;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #C8A96A;
 }
 
 .our-menu {
@@ -255,7 +268,7 @@ body {
 .our-menu .our-menu__background p {
   position: absolute;
   left: 0;
-  font-size: 180px;
+  font-size: 240px;
   z-index: 2;
   color: #F5EEE3;
 }
@@ -270,9 +283,9 @@ body {
 .our-menu .our-menu__background .secondpic {
   position: absolute;
   left: 0;
-  top: 230px;
+  top: 430px;
   width: 15%;
-  height: auto;
+  height: 67%;
   z-index: 1;
 }
 .our-menu .our-menu__title {
@@ -284,14 +297,15 @@ body {
 }
 .our-menu .our-menu__title h3 {
   font-family: "Merriweather", serif;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: lighter;
   color: black;
   z-index: 2;
+  padding-bottom: 30px;
 }
 .our-menu .our-menu__title h4 {
   font-family: "Noto Sans Ethiopic", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   color: black;
   z-index: 3;
 }
@@ -301,7 +315,7 @@ body {
   grid-template-rows: 25% 25% 25% 25%;
   grid-gap: 30px;
   justify-content: center;
-  padding-bottom: 213px;
+  padding-bottom: 220px;
   z-index: 4;
 }
 .our-menu .our-menu__menu .our_menu__list {
@@ -309,7 +323,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   background-color: white;
-  padding-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
   border-radius: 5px;
   z-index: 999;
 }
@@ -319,19 +334,19 @@ body {
 .our-menu .our-menu__menu .our_menu__list .list__text .list__title {
   font-family: "Merriweather", serif;
   padding-bottom: 10px;
-  font-size: 15px;
+  font-size: 25px;
   text-transform: capitalize;
 }
 .our-menu .our-menu__menu .our_menu__list .list__text .list__title2 {
   font-family: "Merriweather", serif;
-  font-size: 12px;
+  font-size: 18px;
   text-transform: capitalize;
 }
 .our-menu .our-menu__menu .our_menu__list .list__price {
   font-family: "Merriweather", serif;
   color: #C8A96A;
-  font-size: 30px;
-  padding-right: 30px;
+  font-size: 40px;
+  padding-right: 50px;
 }
 .our-menu .our-menu__menu .our_menu__list:hover {
   background-image: repeating-linear-gradient(0deg, #C8A96A, #C8A96A 9px, transparent 9px, transparent 13px, #C8A96A 13px), repeating-linear-gradient(90deg, #C8A96A, #C8A96A 9px, transparent 9px, transparent 13px, #C8A96A 13px), repeating-linear-gradient(180deg, #C8A96A, #C8A96A 9px, transparent 9px, transparent 13px, #333333 13px), repeating-linear-gradient(270deg, #C8A96A, #C8A96A 9px, transparent 9px, transparent 13px, #C8A96A 13px);
@@ -342,8 +357,9 @@ body {
 
 .gallery .gallery__background p {
   position: absolute;
+  top: -30px;
   left: 0;
-  font-size: 180px;
+  font-size: 215px;
   z-index: -1;
   color: #C8A96A;
   opacity: 0.1;
@@ -352,19 +368,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 .gallery .gallery__title h3 {
   font-family: "Merriweather", serif;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: lighter;
   color: black;
   z-index: 2;
+  padding-bottom: 30px;
 }
 .gallery .gallery__title h4 {
   font-family: "Noto Sans Ethiopic", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   color: black;
   z-index: 2;
 }
@@ -712,7 +729,7 @@ body {
   border: 1px solid lightgray;
   border-radius: 5px;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 15px;
   transition: 0.5s ease-in-out;
 }
 .gallery .gallery__btn a:hover {
@@ -729,10 +746,11 @@ body {
 .team .team__background p {
   position: absolute;
   left: 0;
-  font-size: 180px;
+  font-size: 240px;
   z-index: 1;
   color: #FAF6F0;
   opacity: 0.05;
+  padding-top: 50px;
 }
 .team .team__title {
   display: flex;
@@ -740,22 +758,23 @@ body {
   justify-content: center;
   align-items: center;
   padding-bottom: 100px;
-  padding-top: 100px;
+  padding-top: 150px;
   z-index: 2;
 }
 .team .team__title h3 {
   font-family: "Merriweather", serif;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: lighter;
   color: white;
+  padding-bottom: 30px;
 }
 .team .team__title h4 {
   font-family: "Noto Sans Ethiopic", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   color: white;
 }
 .team .team__pic {
-  padding-bottom: 100px;
+  padding-bottom: 150px;
 }
 .team .team__pic ul {
   display: grid;
@@ -764,6 +783,9 @@ body {
   grid-gap: 1px;
   align-items: center;
   justify-content: center;
+}
+.team .team__pic ul li {
+  list-style: none;
 }
 .team .team__pic ul li img {
   width: 80%;
@@ -778,7 +800,7 @@ body {
 .blog .blog__background p {
   position: absolute;
   left: 0;
-  font-size: 180px;
+  font-size: 250px;
   z-index: -999;
   color: #FAF6F0;
 }
@@ -792,12 +814,13 @@ body {
 }
 .blog .blog__title h3 {
   font-family: "Merriweather", serif;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: lighter;
+  padding-bottom: 30px;
 }
 .blog .blog__title h4 {
   font-family: "Noto Sans Ethiopic", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
 }
 .blog .blog__article {
   display: grid;
@@ -812,7 +835,7 @@ body {
   border: 1px solid transparent;
 }
 .blog .blog__article .blog__article__bloc img {
-  width: 20em;
+  width: 30em;
 }
 .blog .blog__article .blog__article__bloc .bloc_info {
   display: flex;
@@ -825,7 +848,7 @@ body {
   flex-direction: row;
   align-items: center;
   font-family: "Noto Sans Ethiopic", sans-serif;
-  font-size: 13px;
+  font-size: 20px;
   padding-top: 15px;
 }
 .blog .blog__article .blog__article__bloc .bloc_info p.author .material-symbols-outlined {
@@ -838,7 +861,7 @@ body {
   align-items: center;
   margin-left: 20px;
   font-family: "Noto Sans Ethiopic", sans-serif;
-  font-size: 13px;
+  font-size: 20px;
   padding-top: 15px;
 }
 .blog .blog__article .blog__article__bloc .bloc_info p.date .material-symbols-outlined {
@@ -853,6 +876,7 @@ body {
 .blog .blog__article .blog__article__bloc .bloc_text p {
   font-family: "Merriweather", serif;
   text-transform: capitalize;
+  font-size: 25px;
 }
 .blog .blog__article .blog__article__bloc .bloc_button {
   margin-bottom: 50px;
@@ -872,8 +896,8 @@ body {
   border: 1px solid white;
   border-radius: 5px;
   font-weight: bold;
-  font-size: 12px;
-  width: 48%;
+  font-size: 18px;
+  width: 39%;
   transition: 0.5s ease-in-out;
 }
 .blog .blog__article .blog__article__bloc .bloc_button a .material-symbols-outlined {
@@ -896,11 +920,11 @@ body {
 }
 .blog .blog__brand ul li {
   list-style: none;
-  padding: 35px;
+  padding: 80px;
 }
 
 footer {
-  height: 100%;
+  height: 80%;
   background-image: url(../../images/img-ng-footer.jpg);
 }
 footer .footer__logo {
@@ -1047,9 +1071,11 @@ footer .footer__menu .footer__contact ul .material-symbols-outlined {
 footer .footer__foot {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   border-top: 1px solid #111516;
   margin-bottom: 40px;
+  width: 1200px;
+  margin: auto;
 }
 footer .footer__foot p {
   color: grey;
@@ -1062,6 +1088,7 @@ footer .footer__foot p a {
 }
 footer .footer__foot img {
   width: 5em;
+  margin-right: 260px;
 }
 footer .footer__foot nav {
   margin-top: 40px;
@@ -1089,18 +1116,26 @@ footer .footer__foot nav li:hover {
   .category {
     padding-bottom: 0px;
     background-size: cover;
+    height: 1550px;
   }
   .category .category__first {
     height: auto;
   }
   .category .category__first .category__background p {
-    font-size: 60px;
+    font-size: 80px !important;
+    top: 0;
+  }
+  .category .category__first .category__title {
+    padding-bottom: 80px;
   }
   .category .category__first .category__title h3 {
-    font-size: 20px;
+    font-size: 27px !important;
   }
   .category .category__first .category__list {
     flex-direction: column;
+  }
+  .category .category__first .category__list .category__menu {
+    margin-bottom: 20px;
   }
   .category .category__second {
     display: none;
@@ -1114,11 +1149,18 @@ footer .footer__foot nav li:hover {
   .category .category__second .category__pic .third-pic {
     display: none;
   }
+  .about-us {
+    padding-top: 50px;
+  }
   .about-us .about-us__background p {
     font-size: 60px;
+    padding-top: 80px !important;
   }
   .about-us .about-us__background .about-us__icon {
     display: none;
+  }
+  .about-us .about-us__title h3 {
+    font-size: 30px;
   }
   .about-us .about-us__info {
     flex-direction: column;
@@ -1135,6 +1177,12 @@ footer .footer__foot nav li:hover {
     margin-right: auto;
     margin-left: auto;
   }
+  .our-menu {
+    padding-bottom: 300px !important;
+  }
+  .our-menu .our-menu__title h3 {
+    font-size: 30px !important;
+  }
   .gallery .gallery__background p {
     font-size: 60px;
   }
@@ -1144,7 +1192,7 @@ footer .footer__foot nav li:hover {
     justify-content: center;
   }
   .gallery .gallery__title h3 {
-    font-size: 20px;
+    font-size: 30px !important;
   }
   .gallery .gallery__pic {
     flex-direction: column;
@@ -1188,7 +1236,7 @@ footer .footer__foot nav li:hover {
     font-size: 60px;
   }
   .team .team__title h3 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .team .team__pic {
     padding-bottom: 100px;
@@ -1206,7 +1254,7 @@ footer .footer__foot nav li:hover {
     font-size: 80px;
   }
   .blog .blog__title h3 {
-    font-size: 25px;
+    font-size: 35px;
   }
   .blog .blog__article {
     display: grid;
@@ -1241,31 +1289,39 @@ footer .footer__foot nav li:hover {
   footer .footer__foot {
     flex-direction: column;
     align-items: center;
+    width: auto;
   }
   footer .footer__foot p {
     width: 200px;
     text-align: center;
   }
-  footer .footer__foot p img {
+  footer .footer__foot img {
     display: none;
   }
 }
 @media (max-width: 320px) {
   .category {
-    padding-bottom: 0px;
+    padding-bottom: 50px;
     background-size: cover;
   }
   .category .category__first {
-    height: auto;
+    height: 1600px;
   }
   .category .category__first .category__background p {
     font-size: 60px;
+    top: 0;
+  }
+  .category .category__first .category__title {
+    padding-bottom: 60px;
   }
   .category .category__first .category__title h3 {
     font-size: 20px;
   }
   .category .category__first .category__list {
     flex-direction: column;
+  }
+  .category .category__first .category__list .category__menu {
+    margin-bottom: 20px;
   }
   .category .category__second {
     display: none;
@@ -1284,6 +1340,9 @@ footer .footer__foot nav li:hover {
   }
   .about-us .about-us__background .about-us__icon {
     display: none;
+  }
+  .about-us .about-us__title h3 {
+    font-size: 30px;
   }
   .about-us .about-us__info {
     flex-direction: column;
@@ -1307,7 +1366,7 @@ footer .footer__foot nav li:hover {
     margin-left: auto;
   }
   .our-menu {
-    padding-bottom: 250px;
+    padding-bottom: 300px;
   }
   .our-menu .our-menu__background p {
     font-size: 60px;
@@ -1324,6 +1383,15 @@ footer .footer__foot nav li:hover {
   .our-menu .our-menu__menu {
     grid-template-columns: 80%;
     grid-template-rows: 15% 15% 15% 15% 15% 15% 15% 15%;
+  }
+  .our-menu .our-menu__menu .our_menu__list .list__text .list__title {
+    font-size: 15px;
+  }
+  .our-menu .our-menu__menu .our_menu__list .list__text .list__title2 {
+    font-size: 15px;
+  }
+  .our-menu .our-menu__menu .our_menu__list .list__price {
+    font-size: 20px;
   }
   .gallery .gallery__background p {
     font-size: 60px;
@@ -1405,6 +1473,21 @@ footer .footer__foot nav li:hover {
     grid-template-rows: repeat(3, auto);
     grid-gap: 20px;
   }
+  .blog .blog__article .blog__article__bloc img {
+    width: 20em !important;
+  }
+  .blog .blog__article .blog__article__bloc .bloc_info p.author {
+    font-size: 15px;
+  }
+  .blog .blog__article .blog__article__bloc .bloc_info p.date {
+    font-size: 15px;
+  }
+  .blog .blog__article .blog__article__bloc .bloc_text p {
+    font-size: 20px;
+  }
+  .blog .blog__article .blog__article__bloc .bloc_button a {
+    width: 60%;
+  }
   .blog .blog__brand ul {
     display: flex;
     flex-direction: column;
@@ -1432,12 +1515,13 @@ footer .footer__foot nav li:hover {
   footer .footer__foot {
     flex-direction: column;
     align-items: center;
+    width: auto;
   }
   footer .footer__foot p {
     width: 200px;
     text-align: center;
   }
-  footer .footer__foot p img {
+  footer .footer__foot img {
     display: none;
   }
 }
@@ -1447,13 +1531,23 @@ footer .footer__foot nav li:hover {
     background-size: cover;
   }
   .category .category__first {
-    height: auto;
+    height: 1600px;
   }
   .category .category__first .category__background p {
-    font-size: 60px;
+    font-size: 90px;
+    top: 0;
   }
   .category .category__first .category__list {
     flex-direction: column;
+  }
+  .category .category__first .category__list .category__menu {
+    margin-bottom: 10px;
+  }
+  .category .category__first .category__title {
+    padding-bottom: 60px;
+  }
+  .category .category__first .category__title h3 {
+    font-size: 48px;
   }
   .category .category__second {
     display: none;
@@ -1469,6 +1563,7 @@ footer .footer__foot nav li:hover {
   }
   .about-us .about-us__background p {
     font-size: 100px;
+    padding-top: 50px;
   }
   .about-us .about-us__background .about-us__icon {
     display: none;
@@ -1501,7 +1596,7 @@ footer .footer__foot nav li:hover {
     visibility: hidden;
   }
   .our-menu .our-menu__title h3 {
-    font-size: 20px;
+    font-size: 50px;
   }
   .our-menu .our-menu__menu {
     grid-template-columns: 80%;
@@ -1514,6 +1609,9 @@ footer .footer__foot nav li:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .gallery .gallery__title h3 {
+    font-size: 49px;
   }
   .gallery .gallery__pic {
     flex-direction: column;
@@ -1577,6 +1675,9 @@ footer .footer__foot nav li:hover {
   .team .team__pic ul li img {
     width: 100%;
   }
+  .blog .blog__background p {
+    font-size: 140px;
+  }
   .blog .blog__article {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1605,12 +1706,13 @@ footer .footer__foot nav li:hover {
   footer .footer__foot {
     flex-direction: column;
     align-items: center;
+    width: auto;
   }
   footer .footer__foot p {
     width: 200px;
     text-align: center;
   }
-  footer .footer__foot p img {
+  footer .footer__foot img {
     display: none;
   }
 }
